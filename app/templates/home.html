@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script>
+        <!--
+        function run() {
+            document.getElementById('bigpic').style.display='block';
+        }
+       
+    </script>
+</head>
+<body>
+    <header>
+        <style>
+            div {
+                background-image: url(/static/img.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment:fixed;
+                background-size: cover;
+                min-height: 100%;
+                overflow: hidden;
+
+                
+            }
+        </style>
+
+        <style>
+            input[type=submit] {
+                background-color: #111;
+                color: #fff;
+                border-radius: 10px;
+            }
+        </style>
+
+        <style>
+            input[type=file] {
+                background-color: dimgray;
+                color: #fff;
+                border-radius: 10px;
+            }
+        </style>
+       
+
+
+
+
+        <div class="container" align="center">
+            <h1 style="color:antiquewhite"> Tweets Summerization</h1>
+            <p style="color:azure"> Choose a file and Click Run to get the elbow graph</p>
+            <strong>
+                <nav>
+                    <ul class="menu">
+                        <form method=post enctype=multipart/form-data>
+                            <input type=file name=file>
+                            <input type=submit value=Run>
+
+                        </form>
+
+                        <img id="bigpic" src="static/plot.png" width="400" height="250" </img>
+
+
+                        <form action='/run' method="post" enctype="multipart/form-data">
+                            <label style="color:dimgray" for="k_value">Enter optimal 'K' value</label>
+                            <input type="number" id="k_value" name="k_value" min="1"><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+
+
+
+
+
+
+                    </ul>
+                </nav>
+            </strong>
+        </div>
+    </header>
+</body>
+</html>

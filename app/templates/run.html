@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type=submit] {
+            background-color: #111;
+            color: #fff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        div {
+            background-image: url(/static/img.png)
+        }
+    </style>
+
+    <div align="center">
+        <h1 style="color:antiquewhite"> Clustering and Summarization has done.</h1>
+        <p style="color:azure"> Click below to download clusters.</p>
+        <form action='/run/clusters' method="post" enctype="multipart/form-data">
+            <input type="submit" value="Clusters">
+        </form>
+
+        <p style="color:azure"> Click below to download summaries.</p>
+        <form action='/run/summaries' method="post" enctype="multipart/form-data">
+            <input type="submit" value="Summaries">
+        </form>
+    </div>
+</body>
+</html>
