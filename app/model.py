@@ -1,5 +1,5 @@
 from random import sample
-import torch
+
 import csv
 import pandas as pd
 from sentence_transformers import SentenceTransformer
