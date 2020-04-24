@@ -1,8 +1,11 @@
-flask == 1.1.2
+flask  ==  1.1.2
 werkzeug == 1.0.1
-pandas 
-sentence_transformers
-sklearn
-scipy
-matplotlib
-numpy
+sklearn 
+numpy == 1.18.2
+pandas ==  1.0.3
+matplotlib == 3.2.1
+scipy == 1.4.1
+torch == 1.4.0
+transformers 
+sentence_transformers 
+
